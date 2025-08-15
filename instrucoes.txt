@@ -1,0 +1,9 @@
+no terminal:
+make menuconfig -> exit
+no terminal:
+make qemu_x86_defconfig
+
+
+configurações
+ip host: ping 10.0.3.26
+ip guest:ping 192.168.1.10
