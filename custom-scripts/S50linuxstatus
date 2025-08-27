@@ -3,7 +3,7 @@
 case "$1" in
     start)
         echo "Iniciando o servidor LinuxStatus..."
-        /usr/bin/python3 /usr/bin/linuxstatus.py &  # <- o & aqui é importante!
+        /usr/bin/python /usr/bin/linuxstatus.py &  # <- o & aqui é importante!
         ;;
     stop)
         echo "Parando o servidor LinuxStatus..."
