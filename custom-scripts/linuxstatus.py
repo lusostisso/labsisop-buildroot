@@ -100,17 +100,7 @@ def get_disks():
 
 
 def get_usb_devices():
-    devices = []
-    usb_path = '/sys/bus/usb/devices/'
-    for device in os.listdir(usb_path):
-        dev_path = os.path.join(usb_path, device)
-        try:
-            with open(os.path.join(dev_path, 'product'), 'r') as f:
-                description = f.read().strip()
-                devices.append({"port": device, "description": description})
-        except FileNotFoundError:
-            continue
-    return devices
+    return []  # lista de { "port": str, "description": str }
 
 
 def get_network_adapters():
